@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="shaded_background"></div>
+    <aside id="side_bar">
+        <div id="bar_head">
+            <div id="open_menu" onclick="menu('open_menu')">
+                <span class="side_bar_icon material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+            <div id="logo">
+                <img src="img/logo.png" alt="no img">
+                <div id="bar_title">Penta</div>
+            </div>
+            <div id="close_menu" onclick="menu('close_menu')">
+                <span class="side_bar_icon material-symbols-outlined">
+                    close
+                </span>
+            </div>
+        </div>
+        <div id="bar_content">
+            <div id="Dashboard" class="bar_caontent_elements">
+                <a href="#" class="bar_options" onclick="navigate('Dashboard')">
+                    <span class="side_bar_icon material-symbols-outlined">
+                        dashboard
+                    </span>
+                    <h3 class="side_bar_content">Dashboard</h3>
+                </a>
+            </div>
+
+            <div id="Transaction" class="bar_caontent_elements">
+                <a class="bar_options"  onclick="navigate('Transaction')" href="#">
+                    <span class="side_bar_icon material-symbols-outlined">
+                        account_balance_wallet
+                    </span>
+                    <h3 class="side_bar_content">Transactions</h3>
+                </a>
+            </div>
+
+            <div id="Wallet" class="bar_caontent_elements">
+                <a class="bar_options"  onclick="navigate('Wallet')" href="#">
+                    <span class="side_bar_icon material-symbols-outlined">
+                        wallet
+                    </span>
+                    <h3 class="side_bar_content">Wallet</h3>
+                </a>
+            </div>
+
+            <div id="Analytics" class="bar_caontent_elements">
+                <a class="bar_options"  onclick="navigate('Analytics')" href="#">
+                    <span class="side_bar_icon material-symbols-outlined">
+                        monitoring
+                    </span>
+                    <h3 class="side_bar_content">Analytics</h3>
+                </a>
+            </div>
+
+            <div id="Personal" class="bar_caontent_elements">
+                <a class="bar_options"  onclick="navigate('Personal')" href="#">
+                    <span class="side_bar_icon material-symbols-outlined">
+                        person_filled
+                    </span>
+                    <h3 class="side_bar_content">Personal</h3>
+                </a>
+            </div>
+
+            <div  id="Message"  class="bar_caontent_elements">
+                <a class="bar_options"onclick="navigate('Message')" href="#">
+                    <span class="side_bar_icon material-symbols-outlined">
+                        mail
+                    </span>
+                    <h3 class="side_bar_content">Message</h3>
+                </a>
+            </div>
+
+            <div  id="Setting" class="bar_caontent_elements">
+                <a class="bar_options" onclick="navigate('Setting')" href="#">
+                    <span class="side_bar_icon material-symbols-outlined">
+                        settings
+                    </span>
+                    <h3 class="side_bar_content">Setting</h3>
+                </a>
+            </div>
+
+        </div>
+    </aside>
+    <section id="main_container">
+        <header id="header">
+
+            <div id="head_title">Dashboard</div>
+            <div id="head_content">
+                <div id="search_bar">
+                    <input type="text" placeholder="Search..."></input>
+                    <span id="search_icon" class="material-symbols-outlined head_icon">
+                        search
+                    </span>
+                </div>
+                <div id="notify">
+                    <span id="notify_icon" class="material-symbols-outlined head_icon">
+                        notifications
+                    </span>
+                    <div id="notification">
+                        <h4 id="notify_head">Notifications <p>clear all</p>
+                        </h4>
+                        <div id="notification_list">
+                            <div class="notify_list_content">
+                                <p class="notify_content">hi</p>
+                                <div onclick="notify('close_notification')">
+                                    <span class="material-symbols-outlined">
+                                        close
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="notify_list_content">
+                                <p class="notify_content">hi</p>
+                                <div onclick="notify('close_notification')">
+                                    <span class="material-symbols-outlined">
+                                        close
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="notify_list_content">
+                                <p class="notify_content">hi</p>
+                                <div onclick="notify('close_notification')">
+                                    <span class="material-symbols-outlined">
+                                        close
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="notify_list_content">
+                                <p class="notify_content">hi</p>
+                                <div onclick="notify('close_notification')">
+                                    <span class="material-symbols-outlined">
+                                        close
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="notify_list_content">
+                                <p class="notify_content">hi</p>
+                                <div onclick="notify('close_notification')">
+                                    <span class="material-symbols-outlined">
+                                        close
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="profile">
+                    <img src="img/Photo-4.png" alt="">
+                </div>
+            </div>
+        </header>
+        <main id="main_content">
+            <div id="loader_background">
+                <div class="loader" id="loader">
+                </div>
+                <div id="loader_text">
+                    Loading...
+                </div>
+            </div>
+            <div class="show_card" id="Dashboard_card">
+                <div id="kpi_cards">
+                    <div class="kpi_card" onclick="navigate('Wallet')">
+                        <div class="kpi_icon">
+                            <span class="material-symbols-outlined">
+                                wallet
+                            </span>
+                        </div>
+                        <div class="kpi_data">
+                            <div class="kpi_data_head">Balance</div>
+                            <div class="kpi_data_content">$41,210</div>
+                        </div>
+                    </div>
+                    <div class="kpi_card" onclick="navigate('Wallet')">
+                        <div class="kpi_icon">
+                            <span class="material-symbols-rounded">
+                                payments
+                            </span>
+                        </div>
+                        <div class="kpi_data">
+                            <div class="kpi_data_head">Income</div>
+                            <div class="kpi_data_content">$41,210</div>
+                        </div>
+                    </div>
+                    <div class="kpi_card" onclick="navigate('Wallet')">
+                        <div class="kpi_icon">
+                            <span class="material-symbols-outlined material-symbols-outlined-fill">
+                                credit_card
+                            </span>
+                        </div>
+                        <div class="kpi_data">
+                            <div class="kpi_data_head">Expenses</div>
+                            <div class="kpi_data_content">$41,210</div>
+                        </div>
+                    </div>
+                    <div class="kpi_card" onclick="navigate('Wallet')">
+                        <div class="kpi_icon">
+                            <span class="material-symbols-rounded">
+                                monetization_on
+                            </span>
+                        </div>
+                        <div class="kpi_data">
+                            <div class="kpi_data_head">Savings</div>
+                            <div class="kpi_data_content">$41,210</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="container">
+                    <div id="container_1">
+                        <div id="container_1_1">
+                            <div class="card" id="line_chart">
+                                <nav class="card_nav">
+                                    <div class="card_title">Overview</div>
+                                    <div class="card_options">
+                                        <div class="chart_opt">
+                                            <div></div>
+                                            <span>Income</span>
+                                            <div></div>
+                                            <span>Expenses</span>
+                                            <div id="drpdwn">
+                                                <select>
+                                                    <option value="">Monthly</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <div class="card_content">
+                                    <div class="chart">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="container_1_2">
+                            <div id="container_1_2_1">
+                                <div class="card" id="bar_chart">
+                                    <nav class="card_nav">
+                                        <div class="card_title">Activity</div>
+                                        <div class="card_options">
+                                            <div class="chart_opt">
+                                                <div></div>
+                                                <span>
+                                                    Earning
+                                                </span>
+                                                <div></div>
+                                                <span>
+                                                    Spent
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <div class="card_content">
+                                        <div class="chart" id="bar">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="container_1_2_2">
+                                <div class="card" id="progress_card">
+                                    <nav class="card_nav">
+                                        <div class="card_title">Payment</div>
+                                        <div class="card_options">
+                                        </div>
+                                    </nav>
+                                    <div class="card_content">
+                                        <ul class="list" id="progress_card_list">
+                                            <li class="list-opt progress_card_list_content">
+                                                <div class=" progress_card_icon">
+                                                    <span class="material-symbols-rounded ">
+                                                        person_pin
+                                                    </span>
+                                                </div>
+                                                <div class="list-content progress_card_list_content_data">
+                                                    <div class="list-head progress_card_list_head">
+                                                        <label>Account</label>
+                                                        <label>$3,241/<p>$10,000</p></label>
+                                                    </div>
+                                                    <div id="prgrsbr">
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-opt progress_card_list_content">
+                                                <div class="progress_card_icon">
+                                                    <span class="material-symbols-outlined filled">
+                                                        api
+                                                    </span>
+                                                </div>
+                                                <div class="list-content progress_card_list_content_data">
+                                                    <div class="list-head progress_card_list_head">
+                                                        <label>Software</label>
+                                                        <label>$241/<p>$250</p></label>
+                                                    </div>
+                                                    <div id="prgrsbr">
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-opt progress_card_list_content">
+                                                <div class="progress_card_icon">
+                                                    <span class="material-symbols-outlined filled">
+                                                        house
+                                                    </span>
+                                                </div>
+                                                <div class="list-content progress_card_list_content_data">
+                                                    <div class="list-head progress_card_list_head">
+                                                        <label>Rent House</label>
+                                                        <label>$1,541/<p>$52,000</p></label>
+                                                    </div>
+                                                    <div id="prgrsbr">
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-opt progress_card_list_content">
+                                                <div class="progress_card_icon">
+                                                    <span class="filled material-symbols-outlined">
+                                                        local_cafe
+                                                    </span>
+                                                </div>
+                                                <div class="list-content progress_card_list_content_data">
+                                                    <div class="list-head progress_card_list_head">
+                                                        <label>Food</label>
+                                                        <label>$141/<p>$1,000</p></label>
+                                                    </div>
+                                                    <div id="prgrsbr">
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="container_2">
+                        <div id="container_2_1">
+                            <div class="card" id="credit_card" onclick="navigate('Wallet')">
+                                <nav class="card_nav " id="credit_card_nav">
+                                    <div class="card_title">Credit Card</div>
+                                    <div class="card_options">
+                                        <button class="button" id="credit-card-icn">
+                                            <span class="material-symbols-rounded">
+                                                add
+                                            </span>
+                                        </button>
+                                    </div>
+                                </nav>
+                                <div class="card_content " id="credit_card_content">
+                                    <div id="credit_head">
+                                        <div class=" credit_head_content ">LOGO</div>
+                                        <div class=" credit_head_content " id="accno" name="accno">3475 7381 3759 ****
+                                        </div>
+                                    </div>
+                                    <div id="credit_bal">
+                                        <span>
+                                            <label for="blnc">TOTAL BLANCAE</label>
+                                            <p name="blnc">3,215,352 USD</p>
+                                        </span>
+                                        <span>
+                                            <label for="date">EXP. DATE</label>
+                                            <p name="date">04 / 24</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="container_2_2">
+                            <div class="card" id="transaction_card">
+                                <nav class="card_nav">
+                                    <div class="card_title">Recent Transaction</div>
+                                    <div class="card_options">
+                                        <button class="button" onclick="navigate('Transaction')">
+                                            see all
+                                        </button>
+                                    </div>
+                                </nav>
+                                <div class="card_content">
+                                    <ul class="list" id="transaction_list">
+                                        <li class="transaction_list_content list-content">
+                                            <span class=" profl-icn">
+                                                <img src="img/Photo.png" alt="">
+                                            </span>
+                                            <div class="transaction_list_content_data">
+                                                <span class="profl_name">
+                                                    <label for="nm">Tranfers from</label>
+                                                    <p name="nm">Matheus Ferrero</p>
+                                                </span>
+                                                <span class="transaction_list_price">
+                                                    +$54.08
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="transaction_list_content list-content">
+                                            <span class=" profl-icn">
+                                                <img src="img/Photo-1.png" alt="">
+                                            </span>
+                                            <div class="transaction_list_content_data">
+                                                <span class="profl_name">
+                                                    <label for="nm">Tranfers to</label>
+                                                    <p name="nm">Floyd Miles</p>
+                                                </span>
+                                                <span class="transaction_list_price">
+                                                    -$39.65
+                                                </span>
+                                            </div>
+
+                                        </li>
+                                        <li class="transaction_list_content list-content">
+                                            <span class=" profl-icn">
+                                                <img src="img/Photo-2.png" alt="">
+                                            </span>
+                                            <div class="transaction_list_content_data">
+                                                <span class="profl_name">
+                                                    <label for="nm">Tranfers to</label>
+                                                    <p name="nm">Jerome Bell</p>
+                                                </span>
+                                                <span class="transaction_list_price">
+                                                    -$29.78
+                                                </span>
+                                            </div>
+
+                                        </li>
+                                        <li class="transaction_list_content list-content">
+                                            <span class=" profl-icn">
+                                                <img src="img/Photo-3.png" alt="">
+                                            </span>
+                                            <div class="transaction_list_content_data">
+                                                <span class="profl_name">
+                                                    <label for="nm">Tranfers to</label>
+                                                    <p name="nm">Ralph Edwards</p>
+                                                </span>
+                                                <span class="transaction_list_price">
+                                                    -$46.61
+                                                </span>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="show_card" id="Transaction_card">
+            </div>
+            <div class="show_card" id="Wallet_card">
+                <div id="kpi_cards">
+                    <div class="kpi_card" onclick="navigate('Wallet')">
+                        <div class="kpi_icon">
+                            <span class="material-symbols-outlined">
+                                wallet
+                            </span>
+                        </div>
+                        <div class="kpi_data">
+                            <div class="kpi_data_head">Balance</div>
+                            <div class="kpi_data_content">$41,210</div>
+                        </div>
+                    </div>
+                    <div class="kpi_card" onclick="navigate('Wallet')">
+                        <div class="kpi_icon">
+                            <span class="material-symbols-rounded">
+                                payments
+                            </span>
+                        </div>
+                        <div class="kpi_data">
+                            <div class="kpi_data_head">Income</div>
+                            <div class="kpi_data_content">$41,210</div>
+                        </div>
+                    </div>
+                    <div class="kpi_card" onclick="navigate('Wallet')">
+                        <div class="kpi_icon">
+                            <span class="material-symbols-outlined material-symbols-outlined-fill">
+                                credit_card
+                            </span>
+                        </div>
+                        <div class="kpi_data">
+                            <div class="kpi_data_head">Expenses</div>
+                            <div class="kpi_data_content">$41,210</div>
+                        </div>
+                    </div>
+                    <div class="kpi_card" onclick="navigate('Wallet')">
+                        <div class="kpi_icon">
+                            <span class="material-symbols-rounded">
+                                monetization_on
+                            </span>
+                        </div>
+                        <div class="kpi_data">
+                            <div class="kpi_data_head">Savings</div>
+                            <div class="kpi_data_content">$41,210</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="show_card" id="Analytics_card">
+
+            </div>
+            <div class="show_card" id="Personal_card">
+
+            </div>
+            <div class="show_card" id="Message_card">
+
+            </div>
+            <div class="show_card" id="Setting_card">
+
+            </div>
+        </main>
+    </section>
+    <script src="index.js" ></script>
+</body>
+
+</html>

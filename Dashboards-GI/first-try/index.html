@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <aside id="side-bar">
+        <div id="logo">
+            <img src="src/img/logo.png" alt="no img">
+            <div>Penta</div>
+        </div>
+        <ul class="list" id="side-bar-list">
+            <li class="list-opt side-bar-opt">
+                <div class="side-bar-icn">
+                    <img src="src/img/Dashboard.png"></img src="src/img/">
+                </div>
+                <div class="side-bar-hover">Dashboard</div>
+            </li>
+            <li class="list-opt side-bar-opt">
+                <div class="side-bar-icn">
+                    <img src="src/img/Transactions.png"></img src="src/img/">
+                </div>
+                <div class="side-bar-hover">Transactions</div>
+            </li>
+            <li class="list-opt side-bar-opt">
+                <div class="side-bar-icn">
+                    <img src="src/img/Wallet.png"></img src="src/img/">
+                </div>
+                <div class="side-bar-hover">Wallet</div>
+            </li>
+            <li class="list-opt side-bar-opt">
+                <div class="side-bar-icn">
+                    <img src="src/img/Analytics.png"></img src="src/img/">
+                </div>
+                <div class="side-bar-hover">Analytics</div>
+            </li>
+            <li class="list-opt side-bar-opt">
+                <div class="side-bar-icn">
+                    <img src="src/img/Personal.png"></img src="src/img/">
+                </div>
+                <div class="side-bar-hover">Personal</div>
+            </li>
+            <li class="list-opt side-bar-opt">
+                <div class="side-bar-icn">
+                    <img src="src/img/Message.png"></img src="src/img/">
+                </div>
+                <div class="side-bar-hover">Message</div>
+            </li>
+            <li class="list-opt side-bar-opt">
+                <div class="side-bar-icn">
+                    <img src="src/img/Setting.png"></img src="src/img/">
+                </div>
+                <div class="side-bar-hover">Setting</div>
+            </li>
+        </ul>
+    </aside>
+    <section id="main-container">
+        <header>    
+            <div id="header-title">Dashboard</div>
+            <nav class="nav" id="header-nav">
+                <div id="search-bar">
+                    <input type="text" placeholder="Search..." id="srch">
+                    <img src="src/img/search-normal.png"></img>
+                </div>
+                <div class="icn" id="notify-icn">
+                    <img class="bi" src="src/img/NotificationWithDot.png"></img>
+                </div>
+                <div class="prfl-img" id="header-profl">
+                    <img src="src/img/Photo-4.png" alt="no img">
+                </div>
+            </nav>
+        </header>
+        <main id="main-content">
+            <div class="card-container" id="wallet-cards">
+                <div id="wallets">
+                    <div class="card wallet-card">
+                        <div>
+                            <div class="icn wallet-icn">
+                                <img src="src/img/Balance.png"></img>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <label for="prc3" class="wallet-card-title">Balance</label>
+                            <span name="prc3" class="wallet-card-price">$41,210</span>
+                        </div>
+                    </div>
+                    <div class="card wallet-card">
+                        <div>
+                            <div class="icn wallet-icn">
+                                <img src="src/img/Income.png"></img>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <label for="prc3" class="wallet-card-title">Income</label>
+                            <span name="prc3" class="wallet-card-price">$41,210</span>
+                        </div>
+                    </div>
+                    <div class="card wallet-card">
+                        <div>
+                            <div class="icn wallet-icn">
+                                <img src="src/img/Expenses.png"></img>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <label for="prc3" class="wallet-card-title">Expenses</label>
+                            <span name="prc3" class="wallet-card-price">$41,210</span>
+                        </div>
+                    </div>
+                    <div class="card wallet-card">
+                        <div>
+                            <div class="icn wallet-icn">
+                                <img src="src/img/Savings.png"></img>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <label for="prc3" class="wallet-card-title">Savings</label>
+                            <span name="prc3" class="wallet-card-price">$41,210</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container" id="cards-set">
+                <div class="card-container column-cards" id="sub-card-set">
+                    <div class="card" id="line-chart">
+                        <nav class="card-nav">
+                            <div class="card-title">Overview</div>
+                            <div class="card-options">
+                                <div class="chart-opt">
+                                    <div></div>
+                                    <span>Income</span>
+                                    <div></div>
+                                    <span>Expenses</span>
+                                    <div id="drpdwn">
+                                        <select>
+                                            <option value="">Monthly</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="card-content">
+                            <div class="chart">
+                                <img src="src/img/Overview.png" alt="no image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" id="sub-card-set1">
+                        <div class="card" id="barcard">
+                            <nav class="card-nav">
+                                <div class="card-title">Activity</div>
+                                <div class="card-options">
+                                    <div class="chart-opt">
+                                        <div></div>
+                                        <span>
+                                            Earning
+                                        </span>
+                                        <div></div>
+                                        <span>
+                                            Spent
+                                        </span>
+                                    </div>
+                                </div>
+                            </nav>
+                            <div class="chart" id="barchart">
+                                <img src="src/img/Activity.png" alt="no image">
+                            </div>
+
+                        </div>
+                        <div class="card" id="progresscard">
+                            <nav class="card-nav">
+                                <span class="card-title">Payment</span>
+                            </nav>
+                            <ul class="list" id="prgrslist">
+                                <li class="list-opt progress-card-list-content">
+                                    <div class="icn prgrsicn">
+                                        <img src="src/img/Account.png"></img>
+                                    </div>
+                                    <div class="list-content">
+                                        <div class="list-head">
+                                            <label>Account</label>
+                                            <label>$3,241/<p>$10,000</p></label>
+                                        </div>
+                                        <div id="prgrsbr">
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-opt progress-card-list-content">
+                                    <div class="crdicn prgrsicn">
+                                        <img src="src/img/Software.png"></img>
+                                    </div>
+                                    <div class="list-content">
+                                        <div class="list-head">
+                                            <label>Software</label>
+                                            <label>$241/<p>$250</p></label>
+                                        </div>
+                                        <div id="prgrsbr">
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-opt progress-card-list-content">
+                                    <div class="crdicn prgrsicn">
+                                        <img src="src/img/Rent House.png"></img>
+                                    </div>
+                                    <div class="list-content">
+                                        <div class="list-head">
+                                            <label>Rent Houserh</label>
+                                            <label>$1,541/<p>$52,000</p></label>
+                                        </div>
+                                        <div id="prgrsbr">
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-opt progress-card-list-content">
+                                    <div class="crdicn prgrsicn">
+                                        <img src="src/img/Food.png"></img>
+                                    </div>
+                                    <div class="list-content">
+                                        <div class="list-head">
+                                            <label>Food</label>
+                                            <label>$141/<p>$1,000</p></label>
+                                        </div>
+                                        <div id="prgrsbr">
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container column-cards" id="sub-card-set2">
+                    <div class="card" id="credit-card">
+                        <nav class="card-nav">
+                            <span class="card-title">Credit Card</span>
+                            <div class="card-options">
+                                <span class="icn" id="credit-card-icn">
+                                    <img src="src/img/+.png"></img>
+                                </span>
+                            </div>
+                        </nav>
+                        <div id="credit-card-content" class="card-content">
+                            <span id="credit-head">
+                                <div class="crdcntnt">LOGO</div>
+                                <div class="crdcntnt" name="accno">3475 7381 3759 ****</div>
+                            </span>
+                            <div id="credit-bal">
+                                <span>
+                                    <label for="blnc">TOTAL BLANCAE</label>
+                                    <p name="blnc">3,215,352 USD</p>
+                                </span>
+                                <span>
+                                    <label for="date">EXP. DATE</label>
+                                    <p name="date">04 / 24</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="transaction-card">
+                        <nav class="card-nav" id="transaction-card-nav">
+                            <span class="card-title">Recent Transaction</span>
+                            <span class="card-options">See all</span>
+                        </nav>
+                        <ul class="list" id="transaction-list">
+                            <li class="transaction-list-content .list-content">
+                                <span class="icn profl-icn">
+                                    <img src="src/img/Photo.png" alt="">
+                                </span>
+                                <span class="profl-name">
+                                    <label for="nm">Tranfers from</label>
+                                    <p name="nm">Matheus Ferrero</p>
+                                </span>
+                                <span class="transaction-list-price">
+                                    +$54.08
+                                </span>
+                            </li>
+                            <li class="transaction-list-content .list-content">
+                                <span class="icn profl-icn">
+                                    <img src="src/img/Photo-1.png" alt="">
+                                </span>
+                                <span class="profl-name">
+                                    <label for="nm">Tranfers to</label>
+                                    <p name="nm">Floyd Miles</p>
+                                </span>
+                                <span class="transaction-list-price">
+                                    -$39.65
+                                </span>
+                            </li>
+                            <li class="transaction-list-content .list-content">
+                                <span class="icn profl-icn">
+                                    <img src="src/img/Photo-2.png" alt="">
+                                </span>
+                                <span class="profl-name">
+                                    <label for="nm">Tranfers to</label>
+                                    <p name="nm">Jerome Bell</p>
+                                </span>
+                                <span class="transaction-list-price">
+                                    -$29.78
+                                </span>
+                            </li>
+                            <li class="transaction-list-content .list-content">
+                                <span class="icn profl-icn">
+                                    <img src="src/img/Photo-3.png" alt="">
+                                </span>
+                                <span class="profl-name">
+                                    <label for="nm">Tranfers to</label>
+                                    <p name="nm">Ralph Edwards</p>
+                                </span>
+                                <span class="transaction-list-price">
+                                    -$46.61
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+
+</html>
